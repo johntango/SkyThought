@@ -1,21 +1,22 @@
 {
-    "name": "Python 3.10 Dev Container",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
-    "features": {
-      "ghcr.io/devcontainers/features/python:1": {
-        "version": "3.10"
-      }
-    },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "ms-python.python",
-          "ms-toolsai.jupyter"
-        ]
-      }
-    },
-    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt || true",
-    "remoteUser": "vscode"
-  }
+  "name": "Python 3.10 Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.10"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "github.copilot"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt || true",
+  "remoteUser": "vscode"
+}
